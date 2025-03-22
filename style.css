@@ -1,0 +1,156 @@
+/* Metropolis Regular */
+@font-face {
+    font-family: 'Metropolis'; /* You can choose a name, but 'Metropolis' makes sense */
+    src: url('font/Metropolis-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Metropolis Bold */
+@font-face {
+    font-family: 'Metropolis';
+    src: url('font/Metropolis-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Metropolis';
+    src: url('font/Metropolis-Black.otf') format('opentype');
+    font-weight: 900; /* Or another appropriate value for black */
+    font-style: normal;
+}
+body {
+    font-family: 'Metropolis', sans-serif;;
+    margin: 0;
+}
+
+header {
+    padding: 10px 20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 80px;
+}
+
+.logo-container img {
+    height: 113px;
+    width: 113px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info .phone {
+    display: flex; /* To align icon and text horizontally */
+    align-items: center; /* To vertically align icon and text */
+    margin-right: 5px;
+    letter-spacing: 1px;
+    position: relative; /* Needed to position the pseudo-element */
+    padding-right: 30px; 
+    /* Adjust for spacing */
+}
+.contact-info .phone::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Adjust position as needed */
+    transform: translateY(-50%); /* Vertically center the line */
+    height: 20px; /* Adjust the height of the line */
+    border-left: 1px solid #ccc; /* Adjust color and thickness */
+    right: -10px; /* Adjust this value as needed */
+}
+.contact-info .phone svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px; /* Space between icon and text */
+    color: green; 
+}
+
+.social-icons {
+    display: flex; /* To arrange social icons horizontally */
+    /* align-items: center; To vertically align social icons */
+    margin-right: 60px;
+    padding-left: 20px;
+}
+
+.social-icons a {
+    margin-left: 20px;
+}
+
+.social-icons svg {
+    width: 20px; /* Adjust icon size as needed */
+    height: 20px;
+}
+
+.language-select a {
+    margin-left: 15px;
+    color: #5B7E37;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.language-select a.active, nav ul li a:hover {
+    color: black; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #7E7E7E;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px; /* Adjust as needed */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+    text-align: left;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f1f1f1;
+}
