@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url(https://db.onlinewebfonts.com/c/fdebcd0c20c9955d76511b720d9932bb?family=MaryTodd+W00+Black);
 
 *{
@@ -562,3 +563,673 @@ a{
     line-height: 124%;
     color:var(--gray4);
 }
+=======
+@import url(https://db.onlinewebfonts.com/c/fdebcd0c20c9955d76511b720d9932bb?family=MaryTodd+W00+Black);
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    max-width:1440px;
+    height:4704;
+}
+body{
+    background-color:#fff;
+}
+:root{
+    --black:#010101;
+    --light-black:#343434;
+    --black2:#1A1A1A;
+    --gray:#7E7E7E;
+    --gray2:#676767;
+    --gray3:#26262699;
+    --gray4:#696868;
+    --green:#5B7E37;
+    --dark-green:#04594D;
+    --light-green:#D7E8E1;
+    --beige:#F3F2EA;
+    --white:#FDFDFD;
+ }
+ /*******************nav style***************/
+ li{
+    list-style: none;
+
+ }
+a{
+    text-decoration: none;
+    font-family: "MaryTodd W00 Black";
+    font-size:17px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-size:17px;
+    color:var(--gray);
+    width:100%;
+    white-space: nowrap;
+
+
+}
+.logo img{
+    width:113px;
+    height:113px;
+    position:absolute;
+    top:36px;
+    left:53px;
+}
+.list{
+    display:flex;
+    align-items: center;
+    gap:30px;
+    position:absolute;
+    top:125px;
+    left:211px;
+    width:911px;
+    height:24px;
+}
+.active{
+    color:var(--black);
+
+}
+.language{
+    font-family: "Metropolis";
+    width:21px;
+    height:20px;
+    position:absolute;
+    top:71px;
+    left:1335px;
+    font-weight: 600;
+    font-size:13px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color:var(--light-green);
+}
+.phone span{
+    font-family: "Metropolis";
+    font-weight: 600;
+    font-size:17px;
+    line-height:22px;
+    letter-spacing: 1px;
+    align-items: center;
+    color:var(--black);
+    width:148px;
+    height:22px;
+
+}
+
+.phone .fa-phone{
+    width:19.93px;
+    height:19.87px;
+    color:var(--green);
+    position:relative;
+    top:2.04px;
+    left:1.98px;
+}
+.phone{
+    width:203px;
+    height:24px;
+    position: absolute;
+    top:67px;
+    left:869px;
+    border-radius: 15px;
+    gap:11px;
+}
+.contact .line{
+    width:24px;
+    position:absolute;
+    top:77px;
+    left:1100.5px;
+    border: 1px solid #CCCCCC;
+    transform: rotate(-90deg);
+    display: block;
+    height:1px;
+}
+.social-media{
+    position:absolute;
+    top:71px;
+    left:1150px;
+    display:flex;
+    gap:11px;
+    color:var(--green);
+
+}
+.social-media i{
+    height:24px;
+    width:24px;
+}
+/*****************main**************/
+
+/************right main ***********/
+.green-rectangle{
+    width:1398px;
+    height:306px;
+    position:absolute;
+    top:169px;
+    left:21px;
+    background-color:var(--light-green);
+}
+.beige-rectangle{
+    width:1398px;
+    height:318px;
+    position:relative;
+    top:475px;
+    left:21px;
+    background-color:var(--beige);
+}
+.white-rectangle{
+    width:1240px;
+    height:500px;
+    position:absolute;
+    top:210px;
+    left:100px;
+    background-color:var(--white);
+
+}
+.white-rectangle .right .topContainer{
+    width:591px;
+    height:265px;
+    position:absolute;
+    top:0px;
+    left:650px;
+    background-color:var(--light-green);
+}
+.white-rectangle .right .top{
+    width:541px;
+    height:240px;
+    position:relative;
+    top:30px;
+    left:50px;
+}
+.white-rectangle .right .top p{
+    font-family: Georgia;
+    color:var(--black2);
+    text-align: left;
+    width:192px;
+    height:224px;
+    position:relative;
+    top:-20px;
+    left:-20px;
+    font-weight: 400;
+    line-height: 100%;
+    font-size: 14.5px;
+}
+.tentsPhoto{
+    position: relative;
+    left:190px;
+    top:-250px;
+}
+.tentsPhoto img{
+    width:306px;
+    height:220px;
+    z-index: 1;
+}
+.tentsPhoto h3{
+    font-family: Georgia;
+    color:var(--white);
+    width:296px;
+    height:46px;
+    position: absolute;
+    left:10px;
+    top:160px;
+    font-weight: 700;
+    font-size:20px;
+    z-index:2;
+}
+ .right .bottom{
+    position:absolute;
+    left:-170px;
+    top:-60px;
+    gap:25px;
+}
+.white-rectangle .right .bottom h3{
+    font-family: Georgia;
+    color:var(--black2);
+    text-align: left;
+    width:344px;
+    height:46px;
+    font-weight: 700;
+    line-height: 100%;
+    font-size: 20px;
+    color:var(--black);
+    margin-bottom:10px;
+}
+.right .bottom-details span{
+    font-family: Helvetica;
+    text-align: left;
+    width:55px;
+    height:10px;
+    font-weight: 400;
+    line-height: 100%;
+    font-size: 10px;
+    color:var(--gray2);
+
+}
+.right .bottom-details p{
+    font-family: Georgia;
+    text-align: left;
+    width:344px;
+    height:54px;
+    font-weight: 400;
+    line-height: 100%;
+    font-size: 16px;
+    color:var(--dark-green);
+    margin-top:20px;
+}
+.white-rectangle .right .bottom img{
+    width:172px;
+    height:185px;
+    position:absolute;
+    top:350px;
+    left:170px;
+    color:var(--black2);
+    opacity:90%; /* this is better */
+}
+ .right .bottom-details{
+    position:absolute;
+    left:350px;
+    top:360px;
+    margin-left:30px;
+
+}
+/*************left main****************/
+.slideshow {
+    position: absolute;
+    width: 100%;
+    max-width: 620px;
+    height: 365px; 
+    margin: auto;
+    overflow: hidden;
+    padding-left:35px;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    animation: slideAnimation 9s infinite;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure image fills the container */
+    display: block;
+}
+
+@keyframes slideAnimation {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    30% { opacity: 1; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 3s; }
+.slide:nth-child(3) { animation-delay: 6s; }
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+    position:relative;
+    top:30px;
+    left:220px;
+    z-index: 2;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 5px;
+    background-color: gray;
+    display: inline-block;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.dot.active {
+    background-color: black;
+    opacity: 1;
+}
+
+.left .details-bottom{
+    width:468px;
+    height:60px;
+    position:absolute;
+    top:600px;
+    left:125px;
+    padding:25px 0 25px 0;
+    gap:25px;
+}
+.left .bottom{
+    display:flex;
+    gap:25px;
+    position:relative;
+    top:400px;
+    left:126px;
+}
+.left .bottom img{
+    width:106px;
+    height:60px;
+    position:absolute;
+    left:390px;
+    top:-10px;
+}
+.left .bottom .details-bottom{
+    width:468px;
+    height:60px;
+    position: relative;
+    left:-90px;
+    top:-2px;
+    z-index:2;
+
+}
+.left .details-bottom h3{
+    font-family: Georgia;
+    width:100%;
+    height:17px;
+    color:var(--black);
+    font-weight: 700;
+    font-size:15px;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+.left .details-bottom p{
+    font-family: Georgia;
+    width:468px;
+    height:22px;
+    color:var(--dark-green);
+    font-weight: 400;
+    font-size:10px;
+
+}
+
+/**************** the agri section *************/
+.theArgitictural{
+    display:flex;
+    width:1398px;
+    height:610px;
+    position:absolute;
+    top:820px;
+    left:21px;
+}
+.theArgitictural img{
+    width:757px;
+    height:610px;
+}
+.agricultural-details{
+    width:641.01px;
+    height:610px;
+    position:absolute;
+    left:756.99px;
+    background-color:var(--light-green);
+}
+.content{
+    width:550px;
+    height:440px;
+    position: relative;
+    top:70px;
+    left:79px;
+    padding:44px;
+    background-color:var(--light-green);
+}
+.content h2{
+    font-weight: 700;
+    font-size:32px;
+    line-height: 38px;
+    letter-spacing: 0;
+    color:var(--light-black);
+    font-family: Georgia;
+    
+}
+.content p{
+    font-weight: 400;
+    font-size:16px;
+    line-height:29px;
+    letter-spacing: 0;
+    color:var(--light-gray);
+    font-family: Georgia;
+}
+.btn-section{
+    display:flex;
+    gap:7.25px;
+    width:137.75px;
+    height:29px;
+    background-color: transparent;
+    font-family: "Metropolis";
+    margin-top:44px;
+}
+.main-btn{
+    font-weight: 500;
+    font-size:19.33px;
+    line-height: 26.56px;
+    letter-spacing: 0;
+    border:none;
+    color:var(--green);
+    background-color: transparent;
+}
+.btn-section i{
+    width:14.49px;
+    height:14.51px;
+    position:relative;
+    top:7.24px;
+    left:7.25px;
+    color:var(--green);
+}
+/*************activities*************/
+.activities{
+    width:1398px;
+    height:727.68px;
+    position:absolute;
+    top:1400px;
+    left:21px;
+    color:var(--white);
+    display:flex;
+    align-items: center;    
+    padding:24px;
+    margin-top:10px;
+}
+.right-section{
+    background-image: url(Assets/images/sportsman-drinking-water-training-stationary-bike\ 1.png);
+    width:641px;
+    height:650px;
+    position:absolute;
+    top:70px;
+    left:760px;
+    /*filter: blur(4px);  ## it is not working */
+    opacity:90%;
+}
+.right-section span{
+    font-family: 'DM Sans';
+    color:var(--white);
+    width:306.34px;
+    height:14.73px;
+    position:absolute;
+    bottom:150px;
+    left:20px;
+    font-weight: 400;
+    line-height: 101%;
+    font-size: 18px;
+}
+.right-section p{
+    font-family: Georgia;
+    color:var(--white);
+    width:572.4px;
+    height:119.54px;
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    font-weight: 700;
+    line-height: 100%;
+    font-size: 30px;
+}
+.left-section h2{
+    font-family: Georgia;
+    color:var(--gray3);
+    width:293px;
+    height:45px;
+    position:absolute;
+    left:0px;
+    font-weight: 700;
+    line-height: 38px;
+    font-size: 28px;
+    
+}
+.activity{
+    width:596.24px;
+    height:179.23px;
+    position:relative;
+    left:-40px;
+    margin-top:24px;
+}
+.activity img{
+    width:279.6px;
+    height:179.23px;
+    position:relative;
+    top:40px;
+    left:21px;
+}
+.activity span{
+    font-family: 'DM Sans';
+    color:var(--gray3);
+    opacity:60%;
+    width:133.83px;
+    height:11.95px;
+    position:absolute;
+    left:324.5px;
+    top:50px;
+    font-weight: 500;
+    line-height: 101%;
+    font-size: 10px;
+}
+.activity h3{
+    width:292.74px;
+    height:59.74;
+    position: absolute;
+    top:66px;
+    left:324.5px;
+    font-family: Georgia;
+    font-weight: 700;
+    font-size:18px;
+    line-height: 137%;
+    color:var(--gray3);
+}
+.activity p{
+    width:285.57;
+    height:53.77px;
+    position: absolute;
+    top:140px;
+    left:324.5px;
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size:12px;
+    line-height: 124%;
+    color:var(--gray4);
+}
+
+/*************Project-feature***************/
+.Project-feature{
+    width:1420px;
+    height:640px;
+    position:relative;
+    top:2239px;
+    left:10px;
+}
+.Project-feature h2{
+    width:587px;
+    height:91px;
+    position: absolute;
+    top:-350px;
+    left:500px;
+    font-family: Georgia;
+    font-weight: 800;
+    font-size:32px;
+    line-height: 100%;
+    color:var(--black);
+    align-items: center;
+}
+.features{
+    width:1419px;
+    height:514px;
+    top:-350px;
+    left:500px;
+    display:flex;
+    gap:33px;
+    margin-top:53px;
+}
+.feature{
+    margin-top:-23rem;
+}
+.feature img{
+    width:330px;
+    height:404px;
+    border-radius:24px;
+}
+.feature-details {
+    width:320px;
+    height:94px;
+    margin-top:12px;
+}
+.feature-details h4{
+    height:36px;
+    font-family: 'Manrope', sans-serif;
+    font-weight:800;
+    font-size:30px;
+    line-height:36px;
+    margin-bottom:12px;
+}
+.feature-details p{
+    width:320px;
+    height:46px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:400;
+    font-size:18px;
+    line-height:26px;
+    margin-top:12px;
+}
+.Project-feature .arrows{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:120px;
+    height:50px;
+    position:relative;
+    left:1310px;
+    top:-390px;
+    gap:20px;
+}
+.arrows i{
+    width:50px;
+    height:50px;
+    opacity:40%;
+    border-radius:50%;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:absolute;
+    top:100px;
+    left:100px;
+}
+.arrows .fa-arrow-left{
+    color:rgb(228, 228, 228);
+    background-color:var(--gray);
+    position: absolute;
+    top:2rem;
+    left:-50px;
+    padding:17px;
+
+}
+.arrows .fa-arrow-right{
+    color:var(--white);
+    background-color:#D7B04B;
+    position: absolute;
+    top:2rem;
+    left:50px;
+    padding:17px;
+
+}
+>>>>>>> 1ac3093 ( commit for Home-section-1)
