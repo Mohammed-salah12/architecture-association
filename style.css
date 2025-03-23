@@ -15,24 +15,33 @@
 @font-face {
     font-family: 'Metropolis';
     src: url('font/Metropolis-Black.otf') format('opentype');
-    font-weight: 900; /* Or another appropriate value for black */
+    font-weight: 900; 
     font-style: normal;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 body {
     font-family: 'Metropolis', sans-serif;;
-    margin: 0;
+    overflow-x: hidden; 
+    height: 200vh;
 }
 
 header {
-    padding: 10px 20px;
+    /* margin-top: 10px; */
+    /* padding: 10px 20px; */
+    padding-left: 20px;
+    padding-right:20px ;
 }
 
 .top-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
-    margin-right: 80px;
+    /* margin-bottom: 10px; */
+    margin-right: 35px;
 }
 
 .logo-container img {
@@ -46,34 +55,34 @@ header {
 }
 
 .contact-info .phone {
-    display: flex; /* To align icon and text horizontally */
-    align-items: center; /* To vertically align icon and text */
+    display: flex; 
+    align-items: center; 
     margin-right: 5px;
     letter-spacing: 1px;
-    position: relative; /* Needed to position the pseudo-element */
-    padding-right: 30px; 
-    /* Adjust for spacing */
+    position: relative; 
+    padding-right: 30px;
+    font-weight: 600;
 }
 .contact-info .phone::after {
     content: '';
     position: absolute;
     top: 50%;
-    right: 10px; /* Adjust position as needed */
-    transform: translateY(-50%); /* Vertically center the line */
-    height: 20px; /* Adjust the height of the line */
-    border-left: 1px solid #ccc; /* Adjust color and thickness */
-    right: -10px; /* Adjust this value as needed */
+    right: 10px; 
+    transform: translateY(-50%); 
+    height: 20px; 
+    border-left: 1px solid #ccc; 
+    right: -10px; 
 }
 .contact-info .phone svg {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px; /* Space between icon and text */
-    color: green; 
+    width: 25px;
+    height: 25px;
+    margin-right: 5px; 
+    color: #5B7E37;
 }
 
 .social-icons {
-    display: flex; /* To arrange social icons horizontally */
-    /* align-items: center; To vertically align social icons */
+    display: flex; 
+    /* align-items: center;  */
     margin-right: 60px;
     padding-left: 20px;
 }
@@ -83,8 +92,8 @@ header {
 }
 
 .social-icons svg {
-    width: 20px; /* Adjust icon size as needed */
-    height: 20px;
+    width: 25px; 
+    height: 25px;
 }
 
 .language-select a {
@@ -98,7 +107,11 @@ header {
 .language-select a.active, nav ul li a:hover {
     color: black; 
 }
-
+nav {
+    /* margin-left: 170px; */
+    position: relative;
+    left: 130px;
+}
 nav ul {
     list-style: none;
     padding: 0;
@@ -118,8 +131,14 @@ nav ul li a {
     text-decoration: none;
     color: #7E7E7E;
     font-weight: bold;
-    padding: 10px 15px;
+    /* padding: 10px 15px; */
+    padding-left: 15px;
     display: block;
+    font-size: 16px;
+    line-height: 20px;
+}
+nav ul li a.active {
+    color: black;
 }
 
 /* Dropdown styles */
@@ -136,7 +155,7 @@ nav ul li a {
     list-style: none;
     padding: 0;
     margin: 0;
-    min-width: 150px; /* Adjust as needed */
+    min-width: 100%; 
 }
 
 .dropdown:hover .dropdown-content {
@@ -151,6 +170,56 @@ nav ul li a {
     text-align: left;
 }
 
-.dropdown-content li a:hover {
-    background-color: #f1f1f1;
+
+/* ----------------- */
+.breadcrumb-container {
+    /* position: relative; */
+    /* top:1000px; */
+    /* left: 30px; */
+    /* height: 327px;  */
+    margin-top: 100px;
+    margin-left: 20px;
 }
+
+.home {
+    /* position: absolute; */
+    /* width: 95px; */
+    /* height: 14px; */
+    /* left: 53px; */
+    color: #3E3232;
+    font-size: 14px; 
+    line-height: 14px; 
+    display: inline-block;
+}
+
+.arrow {
+    /* position: absolute; */
+    /* left: 90px; 
+    top: -5px; */
+    left: auto;
+    top: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+.arrow svg {
+    fill: rgba(62, 50, 50, 0.5); /* Set the arrow color */
+}
+.page-name {
+    /* position: absolute; */
+    left: auto; 
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: rgba(62, 50, 50, 0.5); 
+    display: inline-block; 
+    vertical-align: middle;
+}
+img {
+    display: block;
+    width: 100%;
+    margin-top: 67px;
+}
+
+
+
