@@ -96,38 +96,40 @@ header {
 
 .video-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
   margin-top: 3rem;
+  gap: 55rem;
 }
 
 .left-section {
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 
 .rectangle {
-  width: 0.5rem; 
-  height: 1.2rem;  
-  background-color: #6FAC58;  
+  width: 0.5rem;
+  height: 1.2rem;
+  background-color: #6FAC58;
   border-radius: 1.2rem;
   margin: 1rem;
 }
 
-h2 {
+.left-section h2 {
   font-size: 1.5rem;
   color: #333;
+  right: 5rem;
 }
 
 .right-section {
   display: flex;
-  gap: 1.5rem;
+  gap: 3.5rem;
+  align-items: center;
 }
 
 .arrow {
-  width: 2rem;
+  width: 2rem; 
   height: 2rem;
   background-color: #e6e1e1;
   color: #999;
@@ -139,7 +141,7 @@ h2 {
 }
 
 .arrow:hover {
- color: #000;
+  color: #000;
 }
 
 /* Main Image Section */
