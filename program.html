@@ -5,75 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>architecture-association</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="top-bar">
-            <div class="logo-container">
-                <img src="img/logo.png" alt="Logo">
-            </div>
-            <div class="contact-info">
-                <span class="phone">
-                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z"/>
-                    </svg>
-                    +970595500331
-                </span>
-                <div class="social-icons">
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 24 24">
-                            <path fill="green" d="M16.403,9H14V7c0-1.032,0.084-1.682,1.563-1.682h0.868c0.552,0,1-0.448,1-1V3.064c0-0.523-0.401-0.97-0.923-1.005 C15.904,2.018,15.299,1.999,14.693,2C11.98,2,10,3.657,10,6.699V9H8c-0.552,0-1,0.448-1,1v2c0,0.552,0.448,1,1,1l2-0.001V21 c0,0.552,0.448,1,1,1h2c0.552,0,1-0.448,1-1v-8.003l2.174-0.001c0.508,0,0.935-0.381,0.993-0.886l0.229-1.996 C17.465,9.521,17.001,9,16.403,9z"></path>
-                        </svg>
-                    </a>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 30 30">
-                            <path fill="green" d="M 15 4 C 10.814 4 5.3808594 5.0488281 5.3808594 5.0488281 L 5.3671875 5.0644531 C 3.4606632 5.3693645 2 7.0076245 2 9 L 2 15 L 2 15.001953 L 2 21 L 2 21.001953 A 4 4 0 0 0 5.3769531 24.945312 L 5.3808594 24.951172 C 5.3808594 24.951172 10.814 26.001953 15 26.001953 C 19.186 26.001953 24.619141 24.951172 24.619141 24.951172 L 24.621094 24.949219 A 4 4 0 0 0 28 21.001953 L 28 21 L 28 15.001953 L 28 15 L 28 9 A 4 4 0 0 0 24.623047 5.0546875 L 24.619141 5.0488281 C 24.619141 5.0488281 19.186 4 15 4 z M 12 10.398438 L 20 15 L 12 19.601562 L 12 10.398438 z"></path>
-                        </svg>
-                    </a>
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
-                            <path fill="green" d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
-                        </svg>
-                    </a>
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
-                            <path fill="green" d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
-                        </svg>
-                    </a>
-                </div>
-                <div class="language-select">
-                    <a href="#">EN</a>
-                </div>
-            </div>
+    <nav>
+        <div class="logo">
+           <img src="img/logo.png" alt="logo of the organiztion">
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">AGRICULTURAL</a></li>
-                <li><a href="#">MEDIA CENTRE</a></li>
-                <li class="dropdown">
-                    <a href="#" class="active">PROGRAMS AND PROJECTS</a>
-                    <ul class="dropdown-content">
-                        <li><a href="program.html">Program</a></li>
-                        <li><a href="project.html">Projects</a></li>
-                    </ul>
-                </li>
-                <li><a href="governance.html">GOVERNANCE</a></li>
-                <li><a href="our-partners.html">OUR PARTNERS</a></li>
-                <li><a href="#">CONTACTS</a></li>
+         <ul class="list">
+           <li><a href="#">HOME</a></li>
+           <li><a href="#Agricultural.html">Agricultural <i class="fa-solid fa-angle-down"></i></a></li>
+           <li><a href="#Media-Centre.html">Media Centre <i class="fa-solid fa-angle-down"></i></a></li>
+           <!-- <li><a href="#Programs-and-Projects.html">Programs and Projects <i class="fa-solid fa-angle-down"></i></a></li> -->
+           <li class="dropdown" class="active" >
+            <a href="program.html">Programs and Projects <i class="fa-solid fa-angle-down"></i></a>
+            <ul class="dropdown-content">
+                <li><a href="program.html">Program</a></li>
+                <li><a href="project.html">Projects</a></li>
             </ul>
-        </nav>
-    </header>
+            </li>
+            <li class="dropdown">
+                <a href="governance.html">Governance <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="governance.html">General Assembly</a></li>
+                    <li><a href="board-of-directore.html">Board of Directors</a></li>
+                </ul>
+            </li>
+           <li><a href="our-partners.html">Our Partners</a></li>
+           <li><a href="#Contacts.html">Contacts</a></li>
+         </ul>
+         <div class="contact">
+           <div class="phone">
+               <i class="fa-solid fa-phone"></i>
+               <span>+970595500331</span>
+           </div>
+             <div class="line"></div>
+             <div class="social-media">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-instagram"></i>
+             </div>
+   
+           <span class="language">EN</span>
+         </div>
+    </nav>
     <main>
         <div class="breadcrumb-container">
             <div class="home">Home</div>
-            <div class="arrow">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg>
-            </div>
+            <i class="fa-solid fa-angle-right arrow" ></i>
             <div class="page-name">Program</div>
         </div>
         <img src="img/farmer - using - digital-tablet-corn-crop-cultivated - field-with-smart-farming.png" alt="" class="img">
+        <div class="container">
+            <h2 class="program-title">Program</h2>
+            <div class="row">
+                <div class="column">
+                    <div class="box text-box">
+                        <div class="lorem-box">
+                            <p>LOREM</p>
+                            <p>IPSUM</p>
+                        </div>
+                    </div>
+                    <div class="box image-box">
+                        <img src="img/smart-farmer-using-application-by-tablet-concepts-modern-agricultural-technology-visual-iconsmart-farming.png" alt="Image 1">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="box image-box">
+                        <img src="img/tractor-spraying-pesticides-green-field.png" alt="Image 2">
+                    </div>
+                    <div class="box text-box">
+                        <div class="lorem-box">
+                            <p>LOREM</p>
+                            <p>IPSUM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="box text-box">
+                        <div class="lorem-box">
+                            <p>LOREM</p>
+                            <p>IPSUM</p>
+                        </div>
+                        
+                    </div>
+                    <div class="box image-box">
+                        <img src="img/plant-growing-soil-with-sun-shining-it.png" alt="Image 3">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="box image-box">
+                        <img src="img/organic-lettuce-vegetable-plantation-young-healthy-seedlings-growing-up-sun-generative-ai.png" alt="Image 4">
+                    </div>
+                    <div class="box text-box">
+                        <div class="lorem-box">
+                            <p>LOREM</p>
+                            <p>IPSUM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
