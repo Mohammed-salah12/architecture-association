@@ -6,11 +6,19 @@
     box-sizing:border-box;
     max-width:1440px;
     height:4704;
+    
 }
+
 body{
     background-color:#fff;
+    transform: translateX(2.3rem);
+    overflow-x: hidden;
+    min-width: 100%;
+    min-height: 100vh;
+
 }
 :root{
+    /***********color***************/
     --black:#010101;
     --light-black:#343434;
     --black2:#1A1A1A;
@@ -26,6 +34,7 @@ body{
     --light-beige:#FAFAFA;
     --white:#FDFDFD;
  }
+ 
  /*******************nav style***************/
  li{
     list-style: none;
@@ -39,7 +48,6 @@ a{
     letter-spacing: 2px;
     line-height: 20px;
     text-transform: uppercase;
-    font-size:17px;
     color:var(--gray);
     width:100%;
     white-space: nowrap;
@@ -99,7 +107,7 @@ a{
     height:19.87px;
     color:var(--green);
     position:relative;
-    top:2.04px;
+    top:.04px;
     left:1.98px;
 }
 .phone{
@@ -134,9 +142,18 @@ a{
     height:24px;
     width:24px;
 }
+
+                /*media query*/
 /*****************main**************/
 
 /************right main ***********/
+
+.main {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    gap: 30px;
+}
 .green-rectangle{
     width:1398px;
     height:306px;
@@ -160,7 +177,6 @@ a{
     top:210px;
     left:100px;
     background-color:var(--white);
-
 }
 .white-rectangle .right .topContainer{
     width:591px;
@@ -1026,4 +1042,714 @@ a{
     font-size:16px;
     cursor:pointer;
 
+}
+
+/**************media query*************/
+
+@media (max-width: 1200px) {
+    *{
+        margin:0;
+        padding:0;
+        max-width:992px;
+        overflow-y:none;
+    }
+
+    .logo img {
+        width: 80px;
+        height: 80px;
+        top: 40px;
+        left: 80px;
+    }
+
+    .list {
+       position:absolute;
+       left:100px;
+       top:180px;
+
+    }
+
+    .contact .phone{
+        top:40px;
+        left:900px;
+    }
+    .contact .line{
+        display:none;
+    }
+
+    .social-media{
+        position:absolute;
+        top:90px;
+        left:900px;
+    }
+
+    .language{
+        top:90px;
+        left:1050px;
+    }
+
+    /*main*/
+    .green-rectangle , .beige-rectangle{
+        display:none;
+    }
+    .white-rectangle{
+        transform: translateX(9rem);
+
+    }
+    .white-rectangle .right{
+        display:flex;
+        position:absolute;
+        top:30rem;
+        left:-620px;
+    }
+
+    /*******theArgitictural*/
+    .theArgitictural{
+        margin-top:23rem;
+        transform: translateX(15rem);
+    }
+
+    .theArgitictural img{
+        width:640px;
+        height:640px;
+    }
+
+    .agricultural-details{
+        display:flex;
+        position:absolute;
+        top:41rem;
+        left:-.1rem;
+    } 
+
+    /*****activities*/
+    .activities{
+        margin-top:65rem;
+        margin-bottom:65rem;
+        transform: translateX(15rem);
+    }
+
+    .activities .right-section{
+        display:flex;
+        position:absolute;
+        top:47rem;
+        left:0px;
+    }
+
+
+    /*****Project-feature*/
+    .Project-feature{
+        transform: translateX(15rem);
+
+    }
+    .Project-feature h2{
+       margin-left:-30rem;
+    }
+    .arrows{
+        margin-left:-46rem;
+    }
+    .Project-feature{
+        margin-top:125rem;
+    }
+
+    .Project-feature h2{
+        text-align: left;
+        align-items: start;
+    }
+    .feature1{
+        position:absolute;
+        top:700px;
+        left:0;
+    }
+    .feature2{
+        position:absolute;
+        top:700px;
+        left:350px;
+    }
+    /*******media*/
+    .media{
+        transform: translateX(11rem);
+        margin-top:40rem;
+    }
+    .media .line{
+        display:none;
+    }
+    .media .header .btn{
+        position:absolute;
+        left:30rem;
+
+    }
+    .media .right{
+        position:absolute;
+        top:700px;
+    }
+
+    /******partners*/
+    .partners{
+        margin-top:35rem;
+        transform: translateX(13rem);
+    }
+    .partners h2{
+        margin-left:-320px;
+    }
+    .background-partners-logos{
+         width:700px;
+         height:100%;
+         margin-top:5rem;
+         max-width:1100px;
+         padding:0rem 0 8rem 4rem;
+    }
+    .partners-logos{
+        flex-wrap: wrap;
+    }
+
+    /*****applying*/
+    .applying{
+        margin-top:12rem;
+        transform: translateX(5rem);
+    }
+
+    /*******footer*/
+    .footer{
+        transform: translateX(5rem);
+    }
+    .footer .line{
+        width:85%;
+
+    }
+    .footer .social-media{
+        position:absolute;
+        left:630px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    *{
+        margin:0;
+        padding:0;
+        max-width:992px;
+        overflow-y:none;
+    }
+
+    .logo img {
+        width: 80px;
+        height: 80px;
+        top: 40px;
+        left: 80px;
+    }
+
+    .list {
+       position:absolute;
+       left:100px;
+       top:180px;
+
+    }
+
+    .contact .phone{
+        top:40px;
+        left:900px;
+    }
+    .contact .line{
+        display:none;
+    }
+
+    .social-media{
+        position:absolute;
+        top:90px;
+        left:900px;
+    }
+
+    .language{
+        top:90px;
+        left:1050px;
+    }
+
+    /*main*/
+    .green-rectangle , .beige-rectangle{
+        display:none;
+    }
+    .white-rectangle{
+        transform: translateX(9rem);
+
+    }
+    .white-rectangle .right{
+        display:flex;
+        position:absolute;
+        top:30rem;
+        left:-620px;
+    }
+
+    /*******theArgitictural*/
+    .theArgitictural{
+        margin-top:23rem;
+        transform: translateX(15rem);
+    }
+
+    .theArgitictural img{
+        width:640px;
+        height:640px;
+    }
+
+    .agricultural-details{
+        display:flex;
+        position:absolute;
+        top:41rem;
+        left:-.1rem;
+    } 
+
+    /*****activities*/
+    .activities{
+        margin-top:65rem;
+        margin-bottom:65rem;
+        transform: translateX(15rem);
+    }
+
+    .activities .right-section{
+        display:flex;
+        position:absolute;
+        top:47rem;
+        left:0px;
+    }
+
+
+    /*****Project-feature*/
+    .Project-feature{
+        transform: translateX(15rem);
+
+    }
+    .Project-feature h2{
+       margin-left:-30rem;
+    }
+    .arrows{
+        margin-left:-46rem;
+    }
+    .Project-feature{
+        margin-top:125rem;
+    }
+
+    .Project-feature h2{
+        text-align: left;
+        align-items: start;
+    }
+    .feature1{
+        position:absolute;
+        top:700px;
+        left:0;
+    }
+    .feature2{
+        position:absolute;
+        top:700px;
+        left:350px;
+    }
+    /*******media*/
+    .media{
+        transform: translateX(11rem);
+        margin-top:40rem;
+    }
+    .media .line{
+        display:none;
+    }
+    .media .header .btn{
+        position:absolute;
+        left:30rem;
+
+    }
+    .media .right{
+        position:absolute;
+        top:700px;
+    }
+
+    /******partners*/
+    .partners{
+        margin-top:35rem;
+        transform: translateX(13rem);
+    }
+    .partners h2{
+        margin-left:-320px;
+    }
+    .background-partners-logos{
+         width:700px;
+         height:100%;
+         margin-top:5rem;
+         max-width:1100px;
+         padding:0rem 0 8rem 4rem;
+    }
+    .partners-logos{
+        flex-wrap: wrap;
+    }
+
+    /*****applying*/
+    .applying{
+        margin-top:12rem;
+        transform: translateX(5rem);
+    }
+
+    /*******footer*/
+    .footer{
+        transform: translateX(5rem);
+    }
+    .footer .line{
+        width:85%;
+
+    }
+    .footer .social-media{
+        position:absolute;
+        left:630px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    *{
+        margin:0;
+        padding:0;
+        max-width:992px;
+        overflow-y:none;
+    }
+
+    body{
+        transform: translateX(-2rem);
+
+    }
+
+    .logo img {
+        width: 80px;
+        height: 80px;
+        top: 40px;
+        left: 80px;
+    }
+
+    .list {
+       position:absolute;
+       left:100px;
+       top:180px;
+
+    }
+
+    .contact .phone{
+        top:40px;
+        left:900px;
+    }
+    .contact .line{
+        display:none;
+    }
+
+    .social-media{
+        position:absolute;
+        top:90px;
+        left:900px;
+    }
+
+    .language{
+        top:90px;
+        left:1050px;
+    }
+
+    /*main*/
+    .green-rectangle , .beige-rectangle{
+        display:none;
+    }
+    .white-rectangle .right{
+        display:flex;
+        position:absolute;
+        top:30rem;
+        left:-620px;
+    }
+
+    /*******theArgitictural*/
+    .theArgitictural{
+        margin-top:23rem;
+        transform: translateX(15rem);
+    }
+
+    .theArgitictural img{
+        width:640px;
+        height:640px;
+    }
+
+    .agricultural-details{
+        display:flex;
+        position:absolute;
+        top:41rem;
+        left:-.1rem;
+    } 
+
+    /*****activities*/
+    .activities{
+        margin-top:65rem;
+        margin-bottom:65rem;
+        transform: translateX(15rem);
+    }
+
+    .activities .right-section{
+        display:flex;
+        position:absolute;
+        top:47rem;
+        left:0px;
+    }
+
+
+    /*****Project-feature*/
+    .Project-feature{
+        transform: translateX(15rem);
+
+    }
+    .Project-feature h2{
+       margin-left:-30rem;
+    }
+    .arrows{
+        margin-left:-46rem;
+    }
+    .Project-feature{
+        margin-top:125rem;
+    }
+
+    .Project-feature h2{
+        text-align: left;
+        align-items: start;
+    }
+    .feature1{
+        position:absolute;
+        top:700px;
+        left:0;
+    }
+    .feature2{
+        position:absolute;
+        top:700px;
+        left:350px;
+    }
+    /*******media*/
+    .media{
+        transform: translateX(11rem);
+        margin-top:40rem;
+    }
+    .media .line{
+        display:none;
+    }
+    .media .header .btn{
+        position:absolute;
+        left:30rem;
+
+    }
+    .media .right{
+        position:absolute;
+        top:700px;
+    }
+
+    /******partners*/
+    .partners{
+        margin-top:35rem;
+        transform: translateX(13rem);
+    }
+    .partners h2{
+        margin-left:-320px;
+    }
+    .background-partners-logos{
+         width:700px;
+         height:100%;
+         margin-top:5rem;
+         max-width:1100px;
+         padding:0rem 0 8rem 4rem;
+    }
+    .partners-logos{
+        flex-wrap: wrap;
+    }
+
+    /*****applying*/
+    .applying{
+        margin-top:12rem;
+        transform: translateX(5rem);
+    }
+
+    /*******footer*/
+    .footer{
+        transform: translateX(5rem);
+    }
+    .footer .line{
+        width:85%;
+
+    }
+    .footer .social-media{
+        position:absolute;
+        left:630px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    *{
+        margin:0;
+        padding:0;
+        max-width:992px;
+        overflow-y:none;
+    }
+
+    .logo img {
+        width: 80px;
+        height: 80px;
+        top: 40px;
+        left: 40px;
+    }
+
+    .list {
+       position:absolute;
+       left:50px;
+       top:150px;
+       width:480px;
+       flex-wrap:wrap;
+       margin-bottom:2rem;
+
+    }
+
+    .contact .phone{
+        top:40px;
+        left:500px;
+    }
+    .contact .line{
+        display:none;
+    }
+
+    .social-media{
+        position:absolute;
+        top:90px;
+        left:500px;
+    }
+
+    .language{
+        top:90px;
+        left:650px;
+    }
+
+    /*main*/
+    .green-rectangle , .beige-rectangle{
+        display:none;
+    }
+    .white-rectangle{
+        transform: translateX(-5rem);
+
+    }
+    .white-rectangle .right{
+        display:flex;
+        position:absolute;
+        top:30rem;
+        left:-620px;
+    }
+
+    /*******theArgitictural*/
+    .theArgitictural{
+        margin-top:23rem;
+        transform: translateX(1rem);
+    }
+
+    .theArgitictural img{
+        width:640px;
+        height:640px;
+    }
+
+    .agricultural-details{
+        display:flex;
+        position:absolute;
+        top:41rem;
+        left:-.1rem;
+    } 
+
+    /*****activities*/
+    .activities{
+        margin-top:65rem;
+        margin-bottom:65rem;
+        transform: translateX(1rem);
+    }
+
+    .activities .right-section{
+        display:flex;
+        position:absolute;
+        top:47rem;
+        left:0px;
+    }
+
+
+    /*****Project-feature*/
+    .Project-feature{
+        transform: translateX(1rem);
+
+    }
+    .Project-feature h2{
+       margin-left:-30rem;
+    }
+    .arrows{
+        margin-left:-46rem;
+    }
+    .Project-feature{
+        margin-top:125rem;
+    }
+
+    .Project-feature h2{
+        text-align: left;
+        align-items: start;
+    }
+    .feature1{
+        position:absolute;
+        top:700px;
+        left:0;
+    }
+    .feature2{
+        position:absolute;
+        top:700px;
+        left:350px;
+    }
+    /*******media*/
+    .media{
+        transform: translateX(-2rem);
+        margin-top:40rem;
+    }
+    .media .line{
+        display:none;
+    }
+    .media .header .btn{
+        position:absolute;
+        left:30rem;
+
+    }
+    .media .right{
+        position:absolute;
+        top:700px;
+    }
+
+    /******partners*/
+    .partners{
+        margin-top:35rem;
+        transform: translateX(1rem);
+    }
+    .partners h2{
+        margin-left:-320px;
+    }
+    .background-partners-logos{
+         width:700px;
+         height:100%;
+         margin-top:5rem;
+         max-width:1100px;
+         padding:0rem 0 8rem 4rem;
+    }
+    .partners-logos{
+        flex-wrap: wrap;
+    }
+
+    /*****applying*/
+    .applying{
+        margin-top:12rem;
+        transform: translateX(-4rem);
+    }
+
+    /*******footer*/
+    .footer{
+        transform: translateX(-4rem);
+    }
+    .footer .line{
+        width:70%;
+    }
+    
+    .footer .social-media{
+        position:absolute;
+        left:0;
+        top:2rem;
+    }
 }
