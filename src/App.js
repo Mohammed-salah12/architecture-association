@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import AboutUs from './Components/AboutUs/AboutUs';
+// import CardAll from './Components/CardAll/CardAll';
+import Value from './Components/Value/Value';
+import Mission from './Components/Mission/Mission';
+import Vission from './Components/Vission/Vission';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+<BrowserRouter>
+      <div>
+        <Routes>
+          <Route path="/aboutUs" element={<AboutUs />} />
+          <Route path="/mission" element={<Mission />} />
+          <Route path="/vission" element={<Vission/>} /> 
+          <Route path="/value" element={<Value />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
+  )
 }
 
 export default App;

@@ -1,0 +1,15 @@
+.styled-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.palm-list li {
+  list-style-image: url('/public/assets/palm.png');
+}
+
+.flower-list li {
+  list-style-image: url('/public/assets/flower.png');
+}
+.palm-list li{
+  margin-top: -8px !important;
+}
