@@ -4,18 +4,19 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    height:4704;
     
 }
+html, body {
+    width: 100%;
+    height:auto;
+    overflow-x: hidden; 
+  }
 
 body{
     background-color:#fff;
     transform: translateX(2.3rem);
     overflow-x: hidden;
     max-width: 100%;
-    min-height: 100vh;
-
-
 }
 :root{
     /***********color***************/
@@ -1077,6 +1078,69 @@ a{
 }
 
 /**************media query*************/
+@media (max-width:1920px){
+    html{
+        padding-right:7rem;
+    }
+    .list a{
+        font-size:18px;
+    }
+    .nav .contact{
+        position:absolute;
+        left:400px;
+    }
+    .slideshow{
+        width:57%;
+    }
+    .left .bottom img{
+        margin-left:13rem;
+    }
+    .agricultural-details p{
+        width:700px;
+        font-size:30px;
+    }
+    .right-section{
+        position:absolute;
+        left:900px;
+    }
+    .left-section .activity h3{
+        font-size:30px;
+        width:90%;
+        margin:-.5rem 0;
+    }
+    .left-section .activity p{
+        font-size:25px;
+        width:90%;
+    }
+    .Project-feature h2{
+        margin-left:-32rem;
+        font-size:44px;
+        width:800px;
+     }
+     .arrows{
+         margin-left:24rem;
+     }
+     .footer{
+        width:120%;
+        margin-left:-1rem;
+    }
+    .footer .container{
+        width:40%;
+    }
+    .footer .line{
+        width:80%;
+
+    }
+    .footer .social-media{
+        position:absolute;
+        left:1530px;
+    }
+    .copyright-socialMedia p{
+        width:700px;
+        font-size:20px;
+    }
+
+}
 
 @media (max-width:1440px){
     *{
@@ -1088,14 +1152,17 @@ a{
     html, body {
         margin: 0;
         padding: 0;
+        padding-right:0;
         overflow-x: hidden;
         width:100%;
         height:100%;
         padding-left:3rem;
         transform: translateX(-10px);
     }
-    
-    
+    .nav .contact{
+        position:static;
+        left:0px;
+    }
     .logo img {
         width: 120px;
         height: 120px;
@@ -1108,15 +1175,13 @@ a{
         align-items: center;
         gap: 30px;
         position: absolute;
-        top: 125px;
-        left: 211px;
         width: 100%;
         height: 24px;
-       position:absolute;
-       left:80px;
-       top:150px;
-       width:100%;
-       flex-wrap: wrap;
+        position:absolute;
+        left:120px;
+        top:150px;
+        width:100%;
+        flex-wrap: wrap;
     }
     .list a{
     font-size:20px;
@@ -1137,6 +1202,7 @@ a{
         width:70%;
         margin-left:-7rem;
         margin-top:1rem;
+        left:0;
     }
     .white-rectangle .tentsPhoto img{
         z-index:1; 
@@ -1150,7 +1216,7 @@ a{
     .slideshow{
         width:100%;
         height:100%;
-        margin-left:12.5rem;
+        margin-left:18rem;
     }
     .slide .text h3{
         font-size:40px;
@@ -1172,17 +1238,19 @@ a{
     .left .details-bottom ,
     .left .bottom img{
         margin-top:10rem;
+        margin-left:6rem;
 
     }
     .white-rectangle .right {
         margin-top:15rem;
+        margin-left:-10rem;
     }
     .left .bottom{
         margin-left:5rem;
     }
     .left .bottom img{
         width:60%;
-        margin-left:14rem;
+        margin-left:19.5rem;
     }
     .left .details-bottom p{
         font-size:30px;
@@ -1325,7 +1393,8 @@ a{
     }
     .right-section{
         width:95%;
-        height:100%;
+        height:80%;
+        position:static;
         background-position: center;
         background-repeat: none;
         background-size: cover;
@@ -1344,7 +1413,7 @@ a{
 
     /*****Project-feature*/
     .Project-feature{
-        top:2900px;
+        top:2750px;
         margin-left:-1rem;
     }
     .Project-feature h2{
@@ -1392,8 +1461,8 @@ a{
     }
     /*******media*/
     .media{
-        margin-top:69rem;
-        margin-left:-5rem;
+        margin-top:60rem;
+        margin-left:-17rem;
     }
     /******partners*/
     .partners{
@@ -1410,7 +1479,7 @@ a{
          width:100%;
          display: flex;
          flex-wrap: wrap;
-         margin-left:-1rem;
+         margin-left:-19rem;
          align-items: center;
          justify-content: center;
     }
@@ -1444,7 +1513,6 @@ a{
         width:700px;
         font-size:25px;
     }
-
 }
 
 @media (max-width: 1200px) {
@@ -1522,11 +1590,11 @@ a{
         display:flex;
         position:absolute;
         top:40rem;
-        left:-620px;
+        left:-390px;
     }
     .slideshow{
         width:100%;
-        margin-left:10rem;
+        margin-left:17rem;
     }
     .left .bottom{
         width:100%;
@@ -1534,7 +1602,7 @@ a{
     }
     .left .bottom img{
         width:50%;
-        margin-left:17rem;
+        margin-left:23.5rem;
     }
     
     .left .details-bottom p{
@@ -1851,7 +1919,7 @@ a{
     }
     .footer .social-media{
         position:absolute;
-        left:760px;
+        left:900px;
     }
     .copyright-socialMedia p{
         width:500px;
@@ -1925,7 +1993,7 @@ a{
         display:flex;
         position:absolute;
         top:40rem;
-        left:-380px;
+        left:-125px;
     }
     .slideshow{
         width:100%;
@@ -1935,7 +2003,7 @@ a{
     }
     .left .bottom img{
         width:50%;
-        margin-left:10rem;
+        margin-left:16rem;
     }
     
 
@@ -2271,7 +2339,7 @@ a{
 
     .contact .phone{
         top:40px;
-        left:60%;
+        left:70%;
     }
     .contact .line{
         display:none;
@@ -2280,12 +2348,12 @@ a{
     .social-media{
         position:absolute;
         top:90px;
-        left:60%;
+        left:70%;
     }
 
     .language{
         top:90px;
-        left:80%;
+        left:90%;
     }
 
     /*main*/
@@ -2311,18 +2379,18 @@ a{
         display:flex;
         position:absolute;
         top:33rem;
-        left:-620px;
+        left:-370px;
     }
     .slideshow{
         width:140%;
-        margin-left:0rem;
+        margin-left:6rem;
     }
     .left .bottom{
         width:100%;
     }
     .left .bottom img{
         width:50%;
-        margin-left:5%;
+        margin-left:30%;
     }
     
     .left .details-bottom p{
@@ -2361,8 +2429,8 @@ a{
 
     }
     .white-rectangle .right .top p{
-        width:250px;
-        font-size:20px;
+        width:350px;
+        font-size:23px;
         margin-left:-22px;
         margin-top:-5rem;
     }
@@ -2455,7 +2523,7 @@ a{
     }
     .left-section .activity p{
         font-size:20px;
-        width:70%;
+        width:60%;
     }
     .right-section{
         width:95%;
@@ -2469,9 +2537,10 @@ a{
         margin-bottom:60px;
     }
     .right-section p{
-        font-size:30px;
+        font-size:25px;
         margin-bottom:40px;
         line-height:40px;
+        width:70%;
     }
 
 
@@ -2497,7 +2566,7 @@ a{
         height:150%;
     }
     .Project-feature .features{
-        margin-left:5rem;
+        margin-left:2rem;
     }
     .feature-details h4{
         font-size:23px;
@@ -2516,13 +2585,12 @@ a{
     .feature1{
         position:absolute;
         top:570px;
-        left:72px;
+        left:32px;
     }
     .feature2{
         position:absolute;
         top:570px;
-        left:400px;
-        margin-left:10rem;
+        left:360px;
     }
     /*******media*/
     .media{
@@ -2713,27 +2781,28 @@ a{
         left:-620px;
     }
     .slideshow{
-        width:140%;
-        margin-left:0rem;
+        width:160%;
+        margin-left:2rem;
     }
     .left .bottom{
         width:100%;
     }
     .left .bottom img{
         width:80%;
-        margin-left:-100%;
+        margin-left:-60%;
+        margin-top:200px;
     }
     
     .left .details-bottom p{
         font-size:18px;
-        width:150%;
+        width:300%;
         margin-top:3.5rem;
-        margin-left:0rem;
+        margin-left:-1rem;
     }
     .left .details-bottom h3{
         font-size:18px;
-        width:150%;
-        margin-left:0rem;
+        width:250%;
+        margin-left:-1rem;
     }
     
     .white-rectangle .left{
@@ -2743,6 +2812,9 @@ a{
     .white-rectangle .right .topContainer{
         width:70%;
     }
+    .white-rectangle .right{
+        left:-24rem;
+    }
     .white-rectangle .right .top{
         background-color:transparent;
         margin-top:-2rem;
@@ -2750,12 +2822,12 @@ a{
     }
     .white-rectangle .right .top h3{
         margin-left:2rem;
-        width:180px;
+        width:150px;
         font-size:18px;
     }
     .white-rectangle .right .top img{
         z-index:2;
-        width:200px;
+        width:180px;
         margin-left:2rem;
 
     }
@@ -2770,23 +2842,27 @@ a{
         margin-left:1rem;
     }
     .white-rectangle .right .bottom .bottom-details h3{
-        font-size:25px;
-        width:250px;
-        margin-top:1rem;
+        font-size:20px;
+        width:200px;
+        margin-top:2rem;
     }
     .white-rectangle .right .bottom  img{
-        width:200px;
-        height: 200px;
+        width:150px;
+        height: 150px;
         margin-top:2.4rem;
     }
 
     .white-rectangle .right .bottom .bottom-details p{
-        font-size:20px;
-        width:250px;
+        font-size:15px;
+        width:200px;
         margin-top:5rem;
     }
     .white-rectangle .right .bottom .bottom-details span{
        display:none;
+    }
+    .white-rectangle .right .bottom .bottom-details{
+        margin-left:-16rem;
+        margin-top:-1rem;
     }
 
     /*******theArgitictural*/
@@ -2821,7 +2897,7 @@ a{
         width:800px;
     }
     .agricultural-details p{
-        width:400px;
+        width:380px;
         font-size:18px;
     }
 
@@ -2922,12 +2998,12 @@ a{
     .feature1{
         position:absolute;
         top:570px;
-        left:10px;
+        left:20px;
     }
     .feature2{
         position:absolute;
         top:570px;
-        left:250px;
+        left:240px;
         margin-left:3rem;
     }
     /*******media*/
@@ -2943,8 +3019,7 @@ a{
     }
     .media .header .btn{
         position:absolute;
-        left:20rem;
-
+        left:18rem;
     }
     .media-content{
         margin-left:-6rem;
@@ -2954,16 +3029,15 @@ a{
     }
     .media-content h3{
         margin-left:15rem;
-        width:100%;
+        width:70%;
     }
     .media-content span{
-        margin-left:15rem;
-        width:100%;
+        display: none;
     }
     .media .right{
         position:absolute;
         top:640px;
-        left:50px;        
+        left:150px;        
     }
     .media .right iframe{
         width:100%;
@@ -2971,12 +3045,12 @@ a{
     }
     .media .right h3{
         font-size:30px;
-        width:100%;
+        width:80%;
 
     }
     .media .right span{
         font-size:10px;
-        margin:-4rem 0 0 -14rem;
+        margin:-4rem 0 0 -12rem;
     }
     .video iframe{
         width:100%;
@@ -2993,7 +3067,7 @@ a{
         margin-left:6rem;
     }
     .partners h2{
-        margin-left:-200px;
+        margin-left:-250px;
         font-size:50px;
     }
     .background-partners-logos{
@@ -3003,7 +3077,7 @@ a{
          width:100%;
          display: flex;
          flex-wrap: wrap;
-         margin-left:-9rem;
+         margin-left:-12rem;
          align-items: center;
          justify-content: center;
     }
@@ -3038,7 +3112,7 @@ a{
     }
     .footer .social-media{
         position:absolute;
-        left:220px;
+        left:170px;
     }
     .copyright-socialMedia p{
         width:130px;
@@ -3120,21 +3194,22 @@ a{
         left:-620px;
     }
     .slideshow{
-        width:110%;
-        margin-left:-1rem;
+        width:100%;
+        margin-left:6rem;
     }
     .left .bottom{
         width:100%;
+        top:360px;
     }
     .left .bottom img{
         width:60%;
-        margin-left:-14.5rem;
-        margin-top:9rem;
+        margin-left:-10.5rem;
+        margin-top:12rem;
     }
     .slide .text h3{
         font-size:25px;
         flex-wrap: wrap;
-        width:350px;
+        width:330px;
     }
 
     .left .details-bottom p{
@@ -3154,19 +3229,23 @@ a{
     .white-rectangle .right .topContainer{
         width:70%;
     }
+    .white-rectangle .right{
+        left:-370px;
+        top:510px;
+    }
     .white-rectangle .right .top img{
-        margin-left:-14rem;
+        margin-left:-9rem;
         margin-top:12rem;
         width:200px;
         height:170px;
     }
     .white-rectangle .right .top p{
-        width:250px;
-        font-size:15px;
+        width:350px;
+        font-size:18px;
         margin-top:-7rem;
     }
     .white-rectangle .right .top h3{
-        margin-left:-14rem;
+        margin-left:-9rem;
         margin-top:7.5rem;
         font-size:15px;
         width:150px;
@@ -3189,17 +3268,17 @@ a{
     }
     .white-rectangle .right .bottom .bottom-details{
         margin-left:-18rem;
-        margin-top:-3rem;
+        margin-top:-1rem;
     }
     .white-rectangle .right .bottom .bottom-details h3{
         font-size:100%;
-        width:200px;
+        width:250px;
         margin-bottom:.5rem;
     }
     
     .white-rectangle .right .bottom .bottom-details p{
         font-size:100%;
-        width:200px;
+        width:250px;
         margin-top:2rem;
     }
 
@@ -3311,7 +3390,7 @@ a{
     .Project-feature .feature{
         width:47%;
         height:90%;
-        margin-left:-20px;
+        margin-left:0px;
     }
     .feature-details h4{
         font-size:90%;
@@ -3330,15 +3409,14 @@ a{
     .feature1{
         position:absolute;
         top:450px;
-        left:80px;
+        left:30px;
         width:47%;
         height:90%;
     }
     .feature2{
         position:absolute;
         top:450px;
-        left:78%;
-        margin-left:4rem;
+        left:62%;
         width:47%;
         height:90%;
     }
@@ -3476,5 +3554,3 @@ a{
 
     }
 }
-
-
