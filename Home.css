@@ -672,6 +672,7 @@ a{
 }
 
 /*************Project-feature***************/
+  
 .Project-feature{
     width:100%;
     height:640px;
@@ -1113,7 +1114,7 @@ a{
         width:90%;
     }
     .Project-feature h2{
-        margin-left:-32rem;
+        margin-left:-31rem;
         font-size:44px;
         width:800px;
      }
@@ -1431,7 +1432,7 @@ a{
     .Project-feature .feature{
         width:28%;
         height:150%;
-        margin-left:1.6rem;
+        margin-left:-1rem;
 
     }
     .feature-details h4{
@@ -1447,21 +1448,9 @@ a{
         text-align: left;
         align-items: start;
     }
-
-    /*.feature1{
-        position:absolute;
-        top:570px;
-        left:0;
-    }*/
-    .feature2{
-        position:absolute;
-        top:570px;
-        left:440px;
-        margin-left:rem;
-    }
     /*******media*/
     .media{
-        margin-top:60rem;
+        margin-top:28rem;
         margin-left:-17rem;
     }
     /******partners*/
@@ -1776,12 +1765,25 @@ a{
 
 
     /*****Project-feature*/
+    .features {
+        animation: projectSlider 12s infinite;
+      }
+    
+      @keyframes projectSlider {
+        0%   { transform: translateX(0%); }
+        45%  { transform: translateX(0%); }
+        50%  { transform: translateX(-100%); }
+        95%  { transform: translateX(-100%); }
+        100% { transform: translateX(0%); }
+      }
+      
+
     .Project-feature{
         top:2650px;
         margin-left:-1rem;
     }
     .Project-feature h2{
-       margin-left:-30rem;
+       margin-left:-32rem;
        font-size:37px;
        width:800px;
     }
@@ -1810,23 +1812,13 @@ a{
         align-items: start;
     }
 
-    /*.feature1{
-        position:absolute;
-        top:570px;
-        left:0;
-    }*/
-    .feature2{
-        position:absolute;
-        top:570px;
-        left:370px;
-        margin-left:10rem;
-    }
     /*******media*/
     .media{
-        margin-top:54rem;
+        margin-top:20rem;
         margin-left:-6rem;
         transform:translateX(5rem);
     }
+   
     .media .line{
         display:none;
     }
@@ -1858,7 +1850,7 @@ a{
     }
     .media .right h3{
         font-size:40px;
-        width:100%;
+        width:80%;
 
     }
     .media .right span{
@@ -2161,12 +2153,13 @@ a{
         margin-left:1rem;
     }
     .Project-feature h2{
-       margin-left:-30rem;
+       margin-left:-34rem;
        font-size:33px;
        width:100%;
     }
     .Project-feature .features{
-        margin-left:2rem;
+        margin-left:-2rem;
+
     }
     .arrows{
         margin-left:-42rem;
@@ -2192,22 +2185,10 @@ a{
         text-align: left;
         align-items: start;
     }
-
-    .feature1{
-        position:absolute;
-        top:570px;
-        left:30px;
-    }
-    .feature2{
-        position:absolute;
-        top:570px;
-        left:400px;
-        margin-left:140px;
-    }
     /*******media*/
     .media{
-        margin-top:55rem;
-        margin-left:-1rem;
+        margin-top:20rem;
+        margin-left:-3rem;
         transform: translateX(70px);
     }
     .media .line{
@@ -2221,7 +2202,7 @@ a{
     .media .right{
         position:absolute;
         top:640px;
-        margin-left:-17rem;
+        margin-left:-15rem;
     }
     .media .right iframe{
         width:90%;
@@ -2229,7 +2210,7 @@ a{
     }
     .media .right h3{
         font-size:40px;
-        width:95%;
+        width:70%;
 
     }
     .media .left{
@@ -2253,7 +2234,7 @@ a{
 
     /******partners*/
     .partners{
-        margin-top:32rem;
+        margin-top:39rem;
         margin-left:130px;
     }
     .partners h2{
@@ -2267,7 +2248,7 @@ a{
          width:100%;
          display: flex;
          flex-wrap: wrap;
-         margin-left:-7rem;
+         margin-left:-10rem;
          align-items: center;
          justify-content: center;
          transform: translateX(1rem);
@@ -2581,21 +2562,11 @@ a{
         text-align: left;
         align-items: start;
     }
-
-    .feature1{
-        position:absolute;
-        top:570px;
-        left:32px;
-    }
-    .feature2{
-        position:absolute;
-        top:570px;
-        left:360px;
-    }
     /*******media*/
     .media{
-        margin-top:58rem;
+        margin-top:25rem;
         margin-left:-3rem;
+        transform:translateX(6rem);
     }
     .media .line{
         display:none;
@@ -2625,7 +2596,7 @@ a{
     .media .right{
         position:absolute;
         top:640px;
-        left:0px;        
+        left:50px;        
     }
     .media .right iframe{
         width:100%;
@@ -2633,7 +2604,7 @@ a{
     }
     .media .right h3{
         font-size:40px;
-        width:100%;
+        width:70%;
 
     }
     .media .right span{
@@ -2975,18 +2946,18 @@ a{
     }
 
     .Project-feature .feature{
-        width:40%;
-        height:150%;
+        width:50%;
+        height:120%;
     }
     .Project-feature .features{
         margin-left:1rem;
     }
     .feature-details h4{
-        font-size:20px;
+        font-size:18px;
     }
 
     .feature-details p{
-        font-size:15px;
+        font-size:13px;
         width:200px;
     }
 
@@ -2995,21 +2966,11 @@ a{
         align-items: start;
     }
 
-    .feature1{
-        position:absolute;
-        top:570px;
-        left:20px;
-    }
-    .feature2{
-        position:absolute;
-        top:570px;
-        left:240px;
-        margin-left:3rem;
-    }
     /*******media*/
     .media{
-        margin-top:57rem;
+        margin-top:20rem;
         margin-left:-8rem;
+        transform:translateX(4rem);
     }
     .media .line{
         display:none;
@@ -3026,9 +2987,10 @@ a{
     }
     .media-content .video iframe{
          margin-left:15rem;
+         width:70%;
     }
     .media-content h3{
-        margin-left:15rem;
+        margin-left:13rem;
         width:70%;
     }
     .media-content span{
@@ -3037,7 +2999,7 @@ a{
     .media .right{
         position:absolute;
         top:640px;
-        left:150px;        
+        left:135px;        
     }
     .media .right iframe{
         width:100%;
@@ -3374,14 +3336,18 @@ a{
 
     /*****Project-feature*/
     .Project-feature{
-        top:2330px;
+        top:2300px;
         margin-left:-5rem;
     }
     .Project-feature h2{
        margin-left:-28rem;
        font-size:25px;
-       width:100%;
+       width:65%;
        height:100%;
+    }
+    .arrows{
+        margin-left:-60rem;
+        width:70%;
     }
     .Project-feature{
         margin-top:125rem;
@@ -3390,15 +3356,15 @@ a{
     .Project-feature .feature{
         width:47%;
         height:90%;
-        margin-left:0px;
+        margin-left:20px;
     }
     .feature-details h4{
-        font-size:90%;
+        font-size:100%;
     }
 
     .feature-details p{
-        font-size:15px;
-        width:140px;
+        font-size:16px;
+        width:160px;
     }
 
     .Project-feature h2{
@@ -3406,23 +3372,9 @@ a{
         align-items: start;
     }
 
-    .feature1{
-        position:absolute;
-        top:450px;
-        left:30px;
-        width:47%;
-        height:90%;
-    }
-    .feature2{
-        position:absolute;
-        top:450px;
-        left:62%;
-        width:47%;
-        height:90%;
-    }
     /*******media*/
     .media{
-        margin-top:18rem;
+        margin-top:-3rem;
         margin-left:-3rem;
         transform: translateX(10px);
     }
@@ -3444,7 +3396,8 @@ a{
     .media .right{
         position:absolute;
         top:640px;
-        margin-left:-14rem;
+        margin-left:-17rem;
+        margin-top:-4rem;
     }
     .media .right iframe{
         width:90%;
@@ -3458,10 +3411,10 @@ a{
     }
     .media .right span{
         font-size:10px;
-        margin:0rem 0 0 -20%;
+        margin:0rem 0 0 -70%;
     }
     .video iframe{
-        width:100%;
+        width:90%;
     }
     .media-content {
         margin-left:-6.6rem;
@@ -3475,8 +3428,11 @@ a{
     .media-content .video-details h3{
         font-size:30px;
         margin-top:1.5rem;
-        width:290px;
+        width:390px;
         line-height:30px;
+    }
+    .media-content .video-details span{
+        margin-top:-1rem;
     }
 
     /******partners*/
