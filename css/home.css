@@ -1,0 +1,89 @@
+/* Global Variables */
+:root {
+--green-color :#5B7E37;
+--black-color :#010101;
+--white-color :#fdfdfd;
+--gray-color:#7E7E7E;
+--gray-900:#1A1A1A;
+--gray-800:#343434;
+--gray-700:#696868;
+--gray-600:#676767;
+--soft-green:#D7E8E1;
+--warm-white:#F3F2EA;
+--dark-cyan:#04594D;
+--almost-black:#262626;
+--gold-500:#D7B04B;
+--off-white:#EFEFEF;
+--dark-gray:#333333;
+--deep-blue:#253346;
+--gray-50:#253346;
+--dark-blue:#011632;
+--border-radius-4:4px;
+--border-radius-6:6px;
+--border-radius-24:24px;
+--transition-speed:0.3s;
+--box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Reset & Base Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  button,
+  input,
+  select,
+  textarea {
+    font-family: inherit;
+    font-size: inherit;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Utility Classes */
+  .container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 21px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all var(--transition-speed);
+    border-radius: var(--border-radius-4);
+  }
+  
+  .btn-primary {
+    padding: 13px 23px;
+    background-color: var(--green-color);
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .btn-primary:hover {
+    background-color: #1d7c31;
+  }
+  
