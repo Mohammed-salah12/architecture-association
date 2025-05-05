@@ -88,6 +88,136 @@ img {
   background-color: #1d7c31;
 }
 
+/* Start Header Section */
+header {
+  width: 100%;
+  padding: 30px 60px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+header .header-left {
+  width: 113px;
+  height: 113px;
+}
+
+header .header-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+header .header-right-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  justify-content: flex-end;
+}
+
+header .header-right-top .phone {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+header .header-right-top .phone i {
+  font-size: 18px;
+  color: var(--green-color);
+}
+header .header-right-top .phone span {
+  font-size: 17px;
+  color: var(----black-color);
+  font-family: system-ui, "Helvetica Neue", sans-serif;
+}
+
+.v-line {
+  height: 20px;
+  width: 2px;
+  background-color: #cccccc;
+}
+
+header .header-right-top .social-media {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+header .header-right-top .social-media li a {
+  font-size: 20px;
+  color: var(--green-color);
+}
+
+header .header-right-top .social-media li:hover a {
+  color: #05a327;
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.span {
+  font-size: 13px;
+}
+
+header .header-right-bottom ul {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+header .header-right-bottom ul .dropdawon {
+  position: relative;
+}
+
+header .header-right-bottom ul .dropdawon div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--gray-color);
+}
+header .header-right-bottom ul .dropdawon div a {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-family: system-ui, "Helvetica Neue", sans-serif;
+}
+header .header-right-bottom ul .dropdawon div i {
+  font-size: 10px;
+}
+
+header .header-right-bottom ul .dropdawon .list {
+  z-index: 9999;
+  display: none;
+  position: absolute;
+  top: 22px;
+  padding-top: 10px;
+  background-color: transparent;
+  width: 240px;
+}
+header .header-right-bottom ul .dropdawon:hover .list {
+  display: block;
+}
+header .header-right-bottom ul .dropdawon .list ul {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius-6);
+  background-color: white;
+  padding: 10px;
+  box-shadow: var(--box-shadow);
+}
+header .header-right-bottom ul .dropdawon .list ul li a {
+  color: var(--almost-black);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 10px 24px;
+}
+
+/* End Header Section */
+
 /* start swiper */
 
 .swiper-container {
