@@ -286,7 +286,7 @@ img {
   width: 100%;
   aspect-ratio: 599/365;
 }
-.swiper-slide::after {
+.swiper-container .swiper-slide::after {
   content: "";
   position: absolute;
   top: 0;
@@ -301,7 +301,7 @@ img {
   );
   mix-blend-mode: multiply;
 }
-.swiper-pagination {
+.swiper-container .swiper-pagination {
   position: absolute;
   top: 0 !important;
   display: flex;
@@ -741,6 +741,204 @@ img {
 }
 /* End activities section */
 
+/* Start Projects section */
+/* start swiper Projects */
+
+.swiper-projects {
+  position: relative;
+  overflow: visible !important;
+
+  width: 100%;
+}
+/* Remove default Swiper navigation styles */
+.swiper-nav-top {
+  position: absolute;
+  top: -67px;
+  right: 10px;
+  display: flex;
+  width: 120px;
+  gap: 10px;
+  z-index: 10;
+}
+.swiper-projects .swiper-button-next,
+.swiper-projects .swiper-button-prev {
+  position: absolute;
+  background: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+/* Custom Next Button */
+.swiper-projects .custom-next {
+  right: 0;
+  top: 0;
+  background-color: var(--gold-500); /* Your brand color */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+}
+
+/* Custom Prev Button */
+.swiper-projects .custom-prev {
+  right: 0;
+  top: 0;
+  background-color: var(--off-white); /* Your brand color */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+}
+
+/* Hover Effects */
+.swiper-projects .custom-next:hover,
+.swiper-projects .custom-prev:hover {
+  transform: scale(1.1);
+}
+
+/* Arrow Icons (Using CSS or Font Icons) */
+.swiper-projects .custom-next::after,
+.swiper-projects .custom-prev::after {
+  font-family: "Font Awesome"; /* If using Font Awesome */
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.swiper-projects .custom-next::after {
+  content: ""; /* Or use Font Awesome: "\f054" */
+  margin-left: 2px;
+}
+
+.swiper-projects .custom-prev::after {
+  content: ""; /* Or use Font Awesome: "\f053" */
+  margin-right: 2px;
+}
+
+/* Hide buttons when at start/end (optional) */
+.swiper-projects .swiper-button-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+/* end swiper Projects */
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  background-color: var(--white-color);
+  padding: 53px 0px;
+  overflow: hidden;
+}
+
+.projects h2 {
+  font-size: 40px;
+  font-weight: 700;
+  padding: 50px 0;
+  font-family: var(--font-family);
+  color: var(--dark-gray);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.3s ease-out;
+}
+
+.projects h2.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.projects .projects-cards {
+  display: flex;
+  align-items: center;
+}
+
+.projects .projects-cards .project-card {
+  width: 25%;
+  transition: all 0.4s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease-out;
+}
+
+.projects .projects-cards .project-card.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered animation for cards */
+.projects .projects-cards .project-card:nth-child(1) {
+  transition-delay: 0.2s;
+}
+.projects .projects-cards .project-card:nth-child(2) {
+  transition-delay: 0.4s;
+}
+.projects .projects-cards .project-card:nth-child(3) {
+  transition-delay: 0.6s;
+}
+.projects .projects-cards .project-card:nth-child(4) {
+  transition-delay: 0.8s;
+}
+
+/* Hover effects remain the same */
+.projects .projects-cards .project-card:hover {
+  transform: translateY(-10px) !important;
+}
+
+.projects .projects-cards .project-card .project-card-img {
+  display: flex;
+  width: 100%;
+  height: 404px;
+  border-radius: var(--border-radius-24);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.projects .projects-cards .project-card:hover .project-card-img {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.projects .projects-cards .project-card .project-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.projects .projects-cards .project-card:hover .project-card-img img {
+  transform: scale(1.1);
+}
+
+.projects .projects-cards .project-card h3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--almost-black);
+  padding: 15px 0;
+  transition: color 0.3s ease;
+}
+
+.projects .projects-cards .project-card:hover h3 {
+  color: var(--primary-color);
+}
+
+.projects .projects-cards .project-card p {
+  font-family: "Open Sans", sans-serif, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--dark-gray);
+  transition: color 0.3s ease;
+}
+
+.projects .projects-cards .project-card:hover p {
+  color: var(--secondary-color);
+}
+
 /* Responsive styles */
 @media (max-width: 1280px) {
   .landing {
@@ -791,6 +989,14 @@ img {
   .activities .activities-right .image-description {
     padding: 40px 20px;
   }
+  /* start projects */
+
+  .projects .projects-cards .project-card h3 {
+    font-size: 20px;
+  }
+  .projects .projects-cards .project-card p {
+    font-size: 16px;
+  }
 }
 @media (max-width: 1024px) {
   .nav-item {
@@ -814,6 +1020,9 @@ img {
     width: 25px;
     height: 25px;
     margin: 0 3px;
+  }
+  .nav-list {
+    margin: 0 10px;
   }
 
   .landing .landing-content {
@@ -912,6 +1121,10 @@ img {
     .activity-description
     .activity-title {
     font-size: 16px;
+  }
+  /* start projects */
+  .projects h2 {
+    font-size: 30px;
   }
 }
 
@@ -1061,6 +1274,10 @@ img {
     min-width: 100px;
     max-height: 150px;
     height: 100%;
+  }
+  /* start projects */
+  .projects h2 {
+    font-size: 16px;
   }
 }
 
