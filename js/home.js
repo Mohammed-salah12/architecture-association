@@ -1,3 +1,23 @@
+// back-to-top button functionality
+const backToTopButton = document.getElementById("back-to-top");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 1000) {
+    backToTopButton.classList.add("visible");
+  } else {
+    backToTopButton.classList.remove("visible");
+  }
+});
+
+// When clicked, scroll to top
+backToTopButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
 // Initialize Swiper
 var swiper = new Swiper(".swiper-container", {
   loop: true,
@@ -183,4 +203,52 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Trigger once on load in case elements are already visible
   handleScroll();
+});
+
+// Start partner swiper
+var swiper = new Swiper(".swiper-partners", {
+  loop: true,
+  slidesPerView: 8,
+  spaceBetween: 30,
+  speed: 900,
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+    waitForTransition: true,
+  },
+  freeMode: {
+    enabled: true,
+    momentum: true,
+    momentumRatio: 1,
+    momentumBounce: true,
+    momentumVelocityRatio: 0.5,
+  },
+  // Responsive breakpoints
+  breakpoints: {
+    // Mobile (0px - 767px)
+    0: {
+      slidesPerView: 2,
+      spaceBetween: 5,
+    },
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    // Small tablets (768px - 1023px)
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    // Large tablets/desktops (1024px+)
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 30,
+    },
+    // Extra large screens (1200px+)
+    1200: {
+      slidesPerView: 7,
+      spaceBetween: 30,
+    },
+  },
 });
