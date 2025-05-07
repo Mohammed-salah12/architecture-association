@@ -184,3 +184,59 @@ document.addEventListener("DOMContentLoaded", function () {
   // Trigger once on load in case elements are already visible
   handleScroll();
 });
+
+// custom youtube video
+document.addEventListener("DOMContentLoaded", function () {
+  const wrapper = document.querySelector(".youtube-wrapper");
+  const thumbnail = wrapper.querySelector(".thumbnail-container");
+  const iframeContainer = wrapper.querySelector(".iframe-container");
+
+  thumbnail.addEventListener("click", function () {
+    const iframe = document.createElement("iframe");
+    iframe.className = "youtube-iframe";
+    iframe.src = "https://www.youtube.com/embed/2q9gu0Qdj2k?autoplay=1";
+    iframe.allowFullscreen = true;
+    iframe.allow = "autoplay; encrypted-media";
+    iframeContainer.appendChild(iframe);
+
+    wrapper.classList.add("active");
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const playerFrame = document.getElementById("customPlayer");
+  const customPlayBtn = document.querySelector(".custom-play-btn");
+
+  let player;
+
+  // تحميل API اليوتيوب
+  const tag = document.createElement("script");
+  tag.src = "https://www.youtube.com/iframe_api";
+  const firstScriptTag = document.getElementsByTagName("script")[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // تهيئة المشغل
+  window.onYouTubeIframeAPIReady = function () {
+    player = new YT.Player("customPlayer", {
+      events: {
+        onReady: onPlayerReady,
+        onStateChange: onPlayerStateChange,
+      },
+    });
+  };
+
+  function onPlayerReady(event) {
+    customPlayBtn.addEventListener("click", function () {
+      player.playVideo();
+      this.style.display = "none";
+    });
+  }
+
+  function onPlayerStateChange(event) {
+    if (event.data === YT.PlayerState.PLAYING) {
+      customPlayBtn.style.display = "none";
+    } else if (event.data === YT.PlayerState.PAUSED) {
+      customPlayBtn.style.display = "flex";
+    }
+  }
+});
