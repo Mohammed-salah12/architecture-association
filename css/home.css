@@ -75,6 +75,10 @@ img {
   font-weight: 600;
   transition: all var(--transition-speed);
   border-radius: var(--border-radius-4);
+  -webkit-transition: all var(--transition-speed);
+  -moz-transition: all var(--transition-speed);
+  -ms-transition: all var(--transition-speed);
+  -o-transition: all var(--transition-speed);
 }
 
 .btn-primary {
@@ -1261,7 +1265,6 @@ img {
 /* Start Media Section  */
 .media {
   padding: 0 60px;
-  height: 100vh;
 }
 .media .media-top {
   width: 100%;
@@ -1413,6 +1416,56 @@ img {
   font-family: "Inter";
 }
 /* End Media Section  */
+
+/* Start announcement section */
+
+.announcement-container {
+  background-color: #010101;
+  margin-top: 50px;
+  position: relative;
+  height: 420px;
+  /* border: 1px solid var(--off-white); */
+}
+.announcement-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.announcement-container .announcement-content {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.announcement-container .announcement-content h2 {
+  font-family: system-ui;
+  font-size: 55px;
+  font-weight: 800;
+  width: 550px;
+  color: var(--black-color);
+}
+.announcement-container .announcement-content span {
+  font-family: system-ui;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--gray-600);
+}
+.announcement-container .announcement-content a {
+  padding: 10px 20px;
+  background-color: var(--green-color);
+  color: white;
+  width: fit-content;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: system-ui;
+}
+.announcement-container .announcement-content a:hover {
+  background-color: rgb(3, 109, 3);
+}
+/* End announcement section */
 
 /* Responsive styles */
 @media (max-width: 1280px) {
@@ -1628,6 +1681,18 @@ img {
   .projects h2 {
     font-size: 30px;
   }
+  .announcement-container .announcement-content {
+    padding: 20px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .announcement-container .announcement-content h2 {
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+  }
 }
 /* custom youtube video */
 .youtube-wrapper {
@@ -1739,9 +1804,13 @@ img {
     gap: 30px;
     flex-wrap: wrap; */
     width: 100%;
-  .partners-section h2 {
+    .partners-section h2 {
+      font-size: 25px;
+      margin: 30px 0;
+    }
+  }
+  .announcement-container .announcement-content h2 {
     font-size: 25px;
-    margin: 30px 0;
   }
 }
 
